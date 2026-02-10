@@ -1,17 +1,17 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "climate-funding-agent"
 version = "0.1.0"
-description = "Agentic AI system for matching climate startups with seed funding"
-requires-python = ">=3.10"
+description = "Agentic AI for climate startup funding discovery"
+authors = ["Your Name"]
 
-dependencies = [
-  "crewai>=0.30.0",
-  "langchain>=0.1.0",
-  "python-dotenv",
-  "requests",
-  "beautifulsoup4"
-]
+[tool.poetry.dependencies]
+python = "^3.10"
+crewai = "^0.30.0"
+langchain = "^0.1.0"
+requests = "*"
+beautifulsoup4 = "*"
+python-dotenv = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
