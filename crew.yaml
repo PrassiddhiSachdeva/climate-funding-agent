@@ -1,0 +1,25 @@
+name: climate-funding-agent
+description: Agentic AI crew for matching climate startups with seed funding and drafting outreach
+version: 0.1.0
+
+entrypoint: main.py
+
+agents:
+  - name: climate_funding_researcher
+    role: Climate Funding Researcher
+    goal: Find relevant seed-stage climate funding opportunities
+    backstory: Expert in climate venture capital, grants, and impact investors
+
+  - name: outreach_specialist
+    role: Outreach Specialist
+    goal: Draft a clear and compelling funding outreach email
+    backstory: Understands how founders pitch and how investors evaluate deals
+
+tasks:
+  - name: research_funding
+    description: Identify 3–5 relevant seed-stage climate funds for the startup
+    agent: climate_funding_researcher
+
+  - name: draft_outreach
+    description: Draft a personalized funding outreach email
+    agent: outreach_specialist
