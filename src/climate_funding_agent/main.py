@@ -1,10 +1,10 @@
-from climate_funding_agent.crew import build_crew
+from climate_funding_agent.crew import climate_funding_crew
 
 def run():
-    crew = build_crew()
+    crew = climate_funding_crew()
     crew.kickoff(
         inputs={
-            "startup_description": "Seed-stage climate startup building carbon accounting software for Indian MSMEs"
+            "startup_description": "Seed-stage climate startup"
         }
     )
 
