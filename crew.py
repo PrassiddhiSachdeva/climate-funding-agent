@@ -1,7 +1,7 @@
 from crewai import Agent, Task, Crew, crew
 
 @crew
-def climate_funding_crew():
+def crew():
 
     funding_researcher = Agent(
         role="Climate Funding Researcher",
