@@ -6,7 +6,7 @@ authors = ["Your Name"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-crewai = "^0.30.0"
+crewai = "^1.0.0"
 langchain = "^0.1.0"
 requests = "*"
 beautifulsoup4 = "*"
