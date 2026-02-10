@@ -1,1 +1,12 @@
+research_task:
+  description: >
+    Given a climate startup description, identify 3–5 relevant
+    seed-stage funds or grant programs and explain why they fit.
+  agent: funding_researcher
+
+email_task:
+  description: >
+    Choose one fund and draft a short personalized intro email
+    requesting a funding conversation.
+  agent: outreach_agent
 
