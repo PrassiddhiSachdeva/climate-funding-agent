@@ -3,6 +3,8 @@ name = "climate-funding-agent"
 version = "0.1.0"
 description = "Agentic AI for climate startup funding discovery"
 authors = ["Your Name"]
+packages = [{ include = "climate_funding_agent", from = "src" }]
+
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"
