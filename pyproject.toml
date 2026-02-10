@@ -15,3 +15,6 @@ python-dotenv = "*"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.crewai]
+entrypoint = "climate_funding_agent.main:run"
