@@ -1,13 +1,7 @@
-from crewai import Crew
-from crew import funding_researcher, outreach_agent, research_task, email_task
+from crew import climate_funding_crew
 
 def run():
-    crew = Crew(
-        agents=[funding_researcher, outreach_agent],
-        tasks=[research_task, email_task],
-        verbose=True
-    )
-
+    crew = climate_funding_crew()
     crew.kickoff(
         inputs={
             "startup_description": "Seed-stage climate startup building carbon accounting software for Indian MSMEs"
