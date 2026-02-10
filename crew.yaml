@@ -2,7 +2,7 @@ name: climate-funding-agent
 description: Agentic AI crew for matching climate startups with seed funding and drafting outreach
 version: 0.1.0
 
-entrypoint: main.py
+entrypoint: src/climate_funding_agent/main.py
 
 agents:
   - name: climate_funding_researcher
